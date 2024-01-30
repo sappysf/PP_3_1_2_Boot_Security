@@ -6,8 +6,6 @@ import org.springframework.security.core.GrantedAuthority;
 import javax.persistence.*;
 
 @Data
-@EqualsAndHashCode
-@ToString
 @NoArgsConstructor
 @Entity
 @Table(name = "roles")

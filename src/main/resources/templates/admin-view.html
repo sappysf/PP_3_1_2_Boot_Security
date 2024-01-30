@@ -75,7 +75,8 @@
                             </div>
                             <div class="row mb-2 col-4 mx-auto">
                                 <label class="form-label mx-auto font-weight-bold" for="age">Age: </label>
-                                <input class="form-control  mx-auto" type="number"  th:placeholder="Age" th:field="*{age}"
+                                <input class="form-control  mx-auto" type="number" th:placeholder="Age"
+                                       th:field="*{age}"
                                        th:value="${user.getAge()}" id="age">
                             </div>
                             <div class="row mb-2 col-4 mx-auto">
@@ -350,8 +351,10 @@
                                                                     data-dismiss="modal">Close
                                                             </button>
                                                             <form th:action="@{/admin/delete}" th:method="POST">
-                                                                <input type="hidden" name="userId" th:value="${user.getId()}">
-                                                                <button class="btn btn-danger" type="submit">Delete</button>
+                                                                <input type="hidden" name="userId"
+                                                                       th:value="${user.getId()}">
+                                                                <button class="btn btn-danger" type="submit">Delete
+                                                                </button>
                                                             </form>
                                                         </div>
                                                     </form>
