@@ -56,5 +56,5 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     public HiddenHttpMethodFilter hiddenHttpMethodFilter() {
         return new HiddenHttpMethodFilter();
-    }
+    } //
 }
